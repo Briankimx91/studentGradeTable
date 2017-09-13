@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Briankimx91/studentGradeTable/issues"
   },
-  "homepage": "https://github.com/Briankimx91/studentGradeTable#readme"
+  "homepage": "https://github.com/Briankimx91/studentGradeTable#readme",
+  "dependencies": {
+    "mysql": "^2.14.1"
+  }
 }
