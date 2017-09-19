@@ -1,9 +1,10 @@
 {
-  "name": "studentgradetable",
+  "name": "student_grade_table",
   "version": "1.0.0",
   "description": "Student Grade Table",
-  "main": "index.js",
+  "main": "data.js",
   "scripts": {
+    "start": "nodemon ./server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +18,9 @@
   },
   "homepage": "https://github.com/Briankimx91/studentGradeTable#readme",
   "dependencies": {
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "mongodb": "^2.2.31",
     "mysql": "^2.14.1"
   }
 }
