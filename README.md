@@ -12,8 +12,11 @@
 - User Authentication
 - Technologies
 
-###MySQL
-
+###FrameWorks
+- HTML
+- CSS
+- Javascript
 - JQuery
 - NodeJS
 - Bootstrap
+- MongoDB
