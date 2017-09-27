@@ -37,7 +37,7 @@ function SGT() {
             self.addStudentToDom(studentObj);
             self.calculateAverage(studentObj);
             self.createStudentToServer(studentObj.id, name, course, grade);
-            console.log("studentArray:",studentArray);
+            // console.log("studentArray:",studentArray);
         }
     };
 
@@ -96,8 +96,8 @@ function SGT() {
     };
 
     self.editStudentData = function(student){
-        console.log("edit function called");
-        console.log(student);
+        // console.log("edit function called");
+        // console.log(student);
         $('.editName').val(student.name);
         $('.editCourse').val(student.course);
         $('.editGrade').val(student.grade);
@@ -114,7 +114,7 @@ function SGT() {
         $(this).closest('tr').remove();
         self.deleteStudentFromServer(thisID);
         self.calculateAverage();
-        console.log(studentArray);
+        // console.log(studentArray);
     };
 
     self.reset = function() {
@@ -129,7 +129,7 @@ function SGT() {
             success: function(result){
                 self.reset();
                 studentArray = result.data;
-                console.log("success",studentArray);
+                // console.log("success",studentArray);
                 self.updateStudentList();
             },
             error: function(errr) {
@@ -151,7 +151,7 @@ function SGT() {
             },
             success: function(result){
                 studentData = result;
-                console.log("created to server: ",result);
+                // console.log("created to server: ",result);
             },
             error: function(err) {
                 console.log("There was an error");
@@ -164,7 +164,7 @@ function SGT() {
             method: "DELETE",
             url: `/students/${id}`,
             success: function(result){
-                console.log("deleted from server",result);
+                // console.log("deleted from server",result);
             },
             error: function(err){
                 console.log("error");
@@ -187,7 +187,7 @@ function SGT() {
                 grade:editGrade
             },
             success: function(result){
-                console.log("updating worked",result);
+                // console.log("updating worked",result);
             },
             error: function(err){
                 console.log("error")
