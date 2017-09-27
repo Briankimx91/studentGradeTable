@@ -1,0 +1,14 @@
+/*body.loading {*/
+    /*overflow: hidden;*/
+/*}*/
+/*body.loading {*/
+    /*display: block;*/
+/*}*/
+
+.edit_modal {
+    border:1px solid black !important;
+    background-color:white !important;
+}
+.modal td {
+    width:173px;
+}
