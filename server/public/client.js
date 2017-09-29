@@ -96,8 +96,6 @@ function SGT() {
     };
 
     self.editStudentData = function(student){
-        // console.log("edit function called");
-        // console.log(student);
         $('.editName').val(student.name);
         $('.editCourse').val(student.course);
         $('.editGrade').val(student.grade);
@@ -114,7 +112,6 @@ function SGT() {
         $(this).closest('tr').remove();
         self.deleteStudentFromServer(thisID);
         self.calculateAverage();
-        // console.log(studentArray);
     };
 
     self.reset = function() {
